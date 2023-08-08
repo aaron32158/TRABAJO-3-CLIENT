@@ -17,8 +17,8 @@ function Navbar() {
         <button>Home</button>
       </Link>
 
-      <Link to="/all-sneaker">
-        <button>See Sneakers</button>
+      <Link to="/all-sneakers">
+        <button>See all Sneakers</button>
       </Link>
  
       {getToken() && (

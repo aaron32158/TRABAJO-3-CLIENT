@@ -11,15 +11,17 @@ const AddSneaker = () => {
     const { user } = useContext(AuthContext)
     
     const [sneaker, setSneaker] = useState({
-        owner: user._id,
-        type,
-            image : " ",
-            brand : " ",
-            size : " ",
-            usage : " ",
-            details : " ",
-            material : " ",
-            color: 0
+            owner: user?._id,
+            type: "", 
+            image : "",
+            brand : "",
+            size : "",
+            usage : "",
+            details : "",
+            material : "",
+            color: "",
+            cost: 0,
+
     })
 
     const navigate = useNavigate()
@@ -53,20 +55,26 @@ const AddSneaker = () => {
 
             <label>Image</label>
             <input type="text" name="image" value={sneaker.image} onChange={handleTextChange} /> 
-            <label>Image</label>
+            <label>name</label>
             <input type="text" name="type" value={sneaker.type} onChange={handleTextChange} />
-            <label>Image</label>
+            <label>brand</label>
             <input type="text" name="brand" value={sneaker.brand} onChange={handleTextChange} />
-            <label>Image</label>
+            <label>size</label>
             <input type="text" name="size" value={sneaker.size} onChange={handleTextChange} />
-            <label>Image</label>
+            <label>usage</label>
             <input type="text" name="usage" value={sneaker.usage} onChange={handleTextChange} />
+            <label>details</label>
+            <input type="text" name="details" value={sneaker.details} onChange={handleTextChange} />
+            <label>material</label>
+            <input type="text" name="material" value={sneaker.material} onChange={handleTextChange} />
+            <label>color</label>
+            <input type="text" name="color" value={sneaker.color} onChange={handleTextChange} />
+            <label>cost</label>
+            <input type="number" name="cost" value={sneaker.cost} onChange={handleNumberChange} />
            
            
            
-            <label>Cost</label>
-            <input type="number" name="cost" value={sneaker.cost} onChange={handleNumberChange} /> 
-
+            
             <button type="submit">List Sneaker</button>
 
         </form>

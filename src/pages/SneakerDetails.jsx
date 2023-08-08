@@ -16,13 +16,13 @@ const SneakerDetails = () => {
     const { user } = useContext(AuthContext)
 
     const { cart, setCart } = useContext(CartContext)
-z
+
     const { sneakerId } = useParams()
 
     const navigate = useNavigate()
 
     const isOwner = () => {
-        return user._id === sneaker.owner._id
+        return user._id === sneaker.owner
     }
 
     const deleteSneaker = () => {
@@ -44,7 +44,7 @@ z
             
             const body = {
                 sneakerId,
-                sneakerCost: senaker.cost,
+                sneakerCost: sneaker.cost,
                 
             }
 
@@ -117,13 +117,13 @@ z
                     </>
                 }
 
-                <img id="sneaker-detail" src={sneaker.image} alt="sneaker" />
-                <p>{sneaker.size}</p>
-                <p>{sneaker.material}</p>
-                <p>{sneaker.colorPattern}</p>
-                <p>Story: {sneaker.story}</p>
+                <img id="preview" src={sneaker.image} alt="sneaker" />
+                <p>size:{sneaker.size}</p>
+                <p>material:{sneaker.material}</p>
+                <p>color:{sneaker.color}</p>
+                <p>Details: {sneaker.details}</p>
                 <h5>${sneaker.cost}</h5>
-                <h6>Sold by: {sneaker.owner.username}</h6>
+                <h6>Sold by: {sneaker.owner}</h6>
                     <>
 
                             {

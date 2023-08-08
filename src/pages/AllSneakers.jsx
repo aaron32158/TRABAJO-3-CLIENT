@@ -8,23 +8,25 @@ const AllSneakers = () => {
 
     useEffect(() => {
 
-        getSneaekrs()
+        getSneakers()
 
     }, [])
 
     return (
         <div id="all-sneakers">
-            <h1>Used Sneakers for Sale</h1>
+            <h1> Sneakers for Sale</h1>
 
             {
                 sneakers.map((sneaker) => {
                     return (
                         <Link to={`/sneaker-details/${sneaker._id}`} key={sneaker._id}>
                             <div>
+                                <h3> {sneaker.type} </h3>
 
                                 <img id="preview" src={sneaker.image} alt="sneaker" />
-                                <p>{sneaker.size}</p>
-                                <p>{sneaker.cost}</p>
+                               
+                                <p>Size: {sneaker.size}</p>
+                                <p>cost :{sneaker.cost}</p>
 
                             </div>
                         </Link>
