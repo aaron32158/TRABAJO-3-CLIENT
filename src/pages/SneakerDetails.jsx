@@ -105,16 +105,27 @@ const SneakerDetails = () => {
 
             <div>
 
-                {isOwner() &&  
-                    <>
-                        <Link to={`/edit-sneaker/${sneaker._id}`}><button>Edit Sneaker</button></Link>
-                        <button onClick={deleteSneaker}>Remove Listing</button>
-                    </>
-                }
-                {!isOwner() &&  
-                    <>
-                        <button onClick={addToCart} >Add to Cart</button>
-                    </>
+                {
+
+                    user &&
+
+
+                        <>
+                        
+                            {isOwner() &&  
+                                <>
+                                    <Link to={`/edit-sneaker/${sneaker._id}`}><button>Edit Sneaker</button></Link>
+                                    <button onClick={deleteSneaker}>Remove Listing</button>
+                                </>
+                            }
+                            {!isOwner() &&  
+                                <>
+                                    <button onClick={addToCart} >Add to Cart</button>
+                                </>
+                            }
+                        
+                        </>                    
+
                 }
 
                 <img id="preview" src={sneaker.image} alt="sneaker" />
