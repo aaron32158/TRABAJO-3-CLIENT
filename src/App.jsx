@@ -7,8 +7,10 @@ import LoginPage from "./pages/LoginPage";
 import AllSneakers from "./pages/AllSneakers";
 import AddSneaker from "./pages/AddSneaker";
 import EditSneaker from "./pages/EditSneaker";
-import SneakerDetails from "./pages/SneakerDetails"
- 
+import SneakerDetails from "./pages/SneakerDetails";
+import cart from "./pages/Cart"
+import Cart from "./pages/Cart";
+
 function App() {
 
   const getToken = () => {
@@ -33,17 +35,19 @@ function App() {
         <Route path="/all-sneakers" element={ <AllSneakers />} />
         <Route path="/sneaker-details/:sneakerId" element={<SneakerDetails />} />
 
+
         <Route element={<LoggedIn />}>
 
           <Route path="/add-sneaker" element={<AddSneaker />} />
           <Route path="/edit-sneaker/:sneakerId" element={<EditSneaker />} />
-         
+          <Route path="/cart" element={<Cart />} />
         </Route>
 
         <Route element={<NotLoggedIn />}>
 
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
+
 
         </Route>
 

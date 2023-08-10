@@ -7,6 +7,7 @@ import { AuthProvider } from './context/auth.context';
 import { SneakerProvider } from './context/sneaker.context';
 import { CartProvider } from './context/cart.context'; 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>

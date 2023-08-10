@@ -8,7 +8,7 @@ const SneakerPreview = ({ sneaker }) => {
         <Link to={`/sneaker-details/${sneaker._id}`}>
           <div>
             <img id="preview" src={sneaker.image} alt="sneaker" />
-            <p>{sneajer.size}</p>
+            <p>{sneaker.size}</p>
             <p>{sneaker.cost}</p>
           </div>
         </Link>

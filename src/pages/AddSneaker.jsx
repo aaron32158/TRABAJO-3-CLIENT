@@ -53,24 +53,33 @@ const AddSneaker = () => {
 
         <form onSubmit={handleSubmit}>
 
-            <label>Image</label>
+            <label>Image: </label>
             <input type="text" name="image" value={sneaker.image} onChange={handleTextChange} /> 
-            <label>name</label>
+            <br />
+            <label>Name: </label>
             <input type="text" name="type" value={sneaker.type} onChange={handleTextChange} />
-            <label>brand</label>
+            <br />
+            <label>Brand: </label>
             <input type="text" name="brand" value={sneaker.brand} onChange={handleTextChange} />
-            <label>size</label>
+            <br />
+            <label>Size: </label>
             <input type="text" name="size" value={sneaker.size} onChange={handleTextChange} />
+            <br />
             <label>usage</label>
             <input type="text" name="usage" value={sneaker.usage} onChange={handleTextChange} />
+            <br />
             <label>details</label>
             <input type="text" name="details" value={sneaker.details} onChange={handleTextChange} />
+            <br />
             <label>material</label>
             <input type="text" name="material" value={sneaker.material} onChange={handleTextChange} />
+            <br />
             <label>color</label>
             <input type="text" name="color" value={sneaker.color} onChange={handleTextChange} />
+            <br />
             <label>cost</label>
             <input type="number" name="cost" value={sneaker.cost} onChange={handleNumberChange} />
+            <br />
            
            
            
