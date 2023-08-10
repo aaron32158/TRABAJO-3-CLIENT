@@ -4,7 +4,7 @@ import { AuthContext } from "../context/auth.context"
 import { useNavigate } from "react-router-dom"
 
 import { post } from "../services/authService"
-
+import { fileChange } from "../services/fileChange"
 
 const AddSneaker = () => {
 

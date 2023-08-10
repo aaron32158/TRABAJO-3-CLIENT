@@ -22,7 +22,7 @@ const SneakerProvider = ({ children }) => {
     }
 
     return (
-        <SneakerContext.Provider value={{ sneakers, getSneakers}}>
+        <SneakerContext.Provider value={{ sneakers, setSneakers, getSneakers }}>
             {children}
         </SneakerContext.Provider>
     )
