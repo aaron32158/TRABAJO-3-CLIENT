@@ -69,14 +69,14 @@ const EditSneaker = () => {
     }, [])
 
   return (
-    <div>
+    <div id="Editsneaker">
        <h1>Edit Sneaker</h1>
 
        {sneaker ? 
        
        <form onSubmit={handleSubmit}>
 
-            <label>type</label>
+            <div id="Editletter"><label>type</label>
             <input type="text" name="type" value={sneaker.type} onChange={handleTextChange} /> 
 <br />
             <label> Image</label>
@@ -91,7 +91,7 @@ const EditSneaker = () => {
             <label>usage</label>
             <input type="text" name="usage" value={sneaker.usage} onChange={handleTextChange} /> 
            <br />
-            <button type="submit">Update sneaker</button>
+          
 
            
             <label>details</label>
@@ -104,8 +104,9 @@ const EditSneaker = () => {
             <input type="text" name="color" value={sneaker.color} onChange={handleTextChange} /> 
             <br />
             <label>Cost</label>
-            <input type="number" name="cost" value={sneaker.cost} onChange={handleNumberChange} /> 
-       </form>
+            <input type="number" name="cost" value={sneaker.cost} onChange={handleNumberChange} /> </div>
+         <div id="Boton4"><button type="submit">Update sneaker</button></div>
+         </form>
       
 
        : <p>Loading...</p>

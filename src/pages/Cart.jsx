@@ -21,11 +21,11 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div id="YourCart">
       <h1>Your Cart</h1>
 
       {cart ? (
-        <div>
+        <div >
           {cart.sneakers.length === 0 ? (
             <div>
               <h3>Your cart is empty</h3>

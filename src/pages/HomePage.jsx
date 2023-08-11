@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
-    <div>
+    <div id='HomeColor'>
       <h1>
       <Link to="/all-sneakers">See all Sneakers</Link>
       </h1>

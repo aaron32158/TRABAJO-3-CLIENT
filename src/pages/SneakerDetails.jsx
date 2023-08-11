@@ -97,8 +97,8 @@ const SneakerDetails = () => {
 
 
   return (
-    <div>
-        <h1>SneakerDetails</h1>
+    <div id="sneaker-details" class="sneaker-details">
+       <div id="sneakerscolordetails"> <h1>Sneaker Details</h1></div>
 
         {
             sneaker ?
@@ -129,12 +129,14 @@ const SneakerDetails = () => {
                 }
 
                 <img id="preview" src={sneaker.image} alt="sneaker" />
+                <div id="sneakerdetailssize">
                 <p>size:{sneaker.size}</p>
                 <p>material:{sneaker.material}</p>
                 <p>color:{sneaker.color}</p>
                 <p>Details: {sneaker.details}</p>
                 <h5>${sneaker.cost}</h5>
                 <h6>Sold by: {sneaker.owner}</h6>
+                </div>
                     <>
 
                             {
