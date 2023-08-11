@@ -1,4 +1,235 @@
+body{
+    background-image: url(https://images-ext-2.discordapp.net/external/pgB1rXqHW0zGzmuN10kGMXNkwAMTskU14JLIe1O_a58/https/res.cloudinary.com/dhqplbne3/image/upload/v1691722172/Formula1-App/SneakersBG.png?width=732&height=412);
+    opacity: 90%;
+}
+
 #preview { 
 height: 200px;
 width: fit-content;
 }
+
+/* LOGIN PAGE STYLE */
+.LoginPage {
+    color: rgb(8, 8, 8);
+    font-size: large;
+    margin: auto;
+    padding: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 30vw;
+background-image: url(https://c4.wallpaperflare.com/wallpaper/220/138/352/adidas-background-blue-shoes-wallpaper-preview.jpg);
+}
+
+#LPBox{
+    width: 95vw;
+
+    
+
+}
+
+#ButtonBox{
+width: 30vw;
+display: flex;
+justify-content: center;
+}
+#EmailBox{
+    width: 30vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#Imput{
+    height: 1.5vw;
+    border-radius:  3.9vh; 
+}
+
+/* SIGNUP PAGE STYLE */
+.SignupPage{
+    color: rgb(8, 8, 8);
+    font-size: large;
+    margin: auto;
+    padding: 30px;
+    border-radius: 50px;
+    background: #70a4d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 30vw;
+background-image: url(https://c4.wallpaperflare.com/wallpaper/220/138/352/adidas-background-blue-shoes-wallpaper-preview.jpg);
+
+   
+}
+#BoxSIGN{
+    width: 95vw;
+}
+#ButtonBox2{
+    width: 30vw;
+  
+display: flex;
+justify-content: center;
+}
+#EmailSingup{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Imput2{
+    height: 1.5vw;
+    border-radius:  3.9vh; 
+}
+
+
+/* ALL SNEAKERS PAGE STYLE */
+
+#all-sneakers{
+    color: rgb(8, 8, 8);
+    font-size: large;
+    margin: auto;
+    padding: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 30vw;
+
+    
+}
+ /* Add sneakers */
+ #add-sneaker{
+    color: rgb(8, 8, 8);
+    font-size: large;
+    margin: auto;
+    padding: 30px;
+    border-radius: 50px;
+    background: #70a4d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 30vw;
+background-image: url(https://c4.wallpaperflare.com/wallpaper/220/138/352/adidas-background-blue-shoes-wallpaper-preview.jpg);
+
+
+ }
+ 
+ #Bottom3{
+    width: 30vw;
+  
+display: flex;
+justify-content: center;
+ }
+
+
+/* NAV */
+
+ nav {
+    background-color: #0f81df;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  nav button {
+    background-color: transparent;
+    border: none;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+  nav button:hover {
+    background-color: #088ae0;
+  }
+  
+  
+  nav span {
+    color: white;
+    margin-right: 10px;
+  }
+  
+  
+  nav button.logout {
+    background-color: #c0392b; 
+  }
+  
+  
+  nav button.signup,
+  nav button.login {
+    background-color: #121213; 
+  }
+  
+  
+  nav .signup,
+  nav .login {
+    margin-left: auto;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    background-color: #0769c5;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+    width: 100%; 
+    z-index: 1000;
+}
+
+/* Estilos para la sección de sneakers */
+#all-sneakers {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para cada sneaker */
+  #all-sneakers div {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 0 0 calc(33.33% - 20px); /* Distribuir en 3 columnas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Cambio de sombra y escala al pasar el mouse sobre cada sneaker */
+  #all-sneakers div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para el título del sneaker */
+  #all-sneakers h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la imagen del sneaker */
+  #all-sneakers img#preview {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los detalles del sneaker */
+  #all-sneakers p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  

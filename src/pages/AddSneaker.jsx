@@ -11,7 +11,8 @@ const AddSneaker = () => {
     const { user } = useContext(AuthContext)
     
     const [sneaker, setSneaker] = useState({
-            owner: user?._id,
+            
+        owner: user?._id,
             type: "", 
             image : "",
             brand : "",
@@ -49,11 +50,13 @@ const AddSneaker = () => {
       
   return (
     <div id="add-sneaker" >
-        <h1>Sell Your Sneaker</h1>
+       
+        <h1>Add Your Sneaker</h1>
 
         <form onSubmit={handleSubmit}>
 
             <label>Image: </label>
+            
             <input type="text" name="image" value={sneaker.image} onChange={handleTextChange} /> 
             <br />
             <label>Name: </label>
@@ -80,14 +83,12 @@ const AddSneaker = () => {
             <label>cost</label>
             <input type="number" name="cost" value={sneaker.cost} onChange={handleNumberChange} />
             <br />
-           
-           
-           
-            
+        <div id="Bottom3">
             <button type="submit">List Sneaker</button>
-
+            </div>
         </form>
-    </div>
+        </div>
+    
   )
 }
 

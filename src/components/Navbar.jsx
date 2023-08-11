@@ -12,6 +12,7 @@ function Navbar() {
       }
 
   return (
+    <nav className="navbar">
     <nav>
       <Link to="/">
         <button>Home</button>
@@ -24,7 +25,7 @@ function Navbar() {
       {getToken() && (
         <>
             <Link to="/add-sneaker">
-                <button>List Sneaker</button>
+                <button>Add Sneaker</button>
             </Link>
             {user && 
                 <Link to='cart'>
@@ -32,8 +33,9 @@ function Navbar() {
                 </Link>  
             }      
                 
-            <span>{user && <span>Welcome {user.username}!</span>}</span>
+            <span>{user && <span>Welcome {user.username}</span>}</span>
             <button onClick={logOutUser}>Logout</button>
+            
         </>
       )}
  
@@ -43,6 +45,7 @@ function Navbar() {
           <Link to="/login"> <button>Login</button> </Link>
         </>
       )}
+    </nav>
     </nav>
   );
 }

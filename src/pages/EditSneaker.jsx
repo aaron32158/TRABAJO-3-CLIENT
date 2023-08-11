@@ -90,8 +90,10 @@ const EditSneaker = () => {
             <br />
             <label>usage</label>
             <input type="text" name="usage" value={sneaker.usage} onChange={handleTextChange} /> 
+           <br />
             <button type="submit">Update sneaker</button>
-            <br />
+
+           
             <label>details</label>
             <input type="text" name="details" value={sneaker.details} onChange={handleTextChange} /> 
             <br />

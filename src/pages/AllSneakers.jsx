@@ -13,8 +13,9 @@ const AllSneakers = () => {
     }, [])
 
     return (
-        <div id="all-sneakers">
-            <h1> Sneakers for Sale</h1>
+        <div id="all-sneakers" className="all-sneakers">
+    <h1> Sneakers for Sale</h1>
+    
 
             {
                 sneakers.map((sneaker) => {
@@ -34,6 +35,7 @@ const AllSneakers = () => {
                 })
             }
         </div>
+        
     )
 }
 

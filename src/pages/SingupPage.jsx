@@ -47,12 +47,16 @@ function SignupPage() {
 
   
   return (
+
+    <div id="BoxSIGN">
     <div className="SignupPage">
       <h1>Sign Up</h1>
 
       <form onSubmit={handleSignupSubmit}>
+        <div id="EmailSingup">
         <label>Email:</label>
         <input 
+        id="Imput2"
           type="email"
           name="email"
           value={user.email}
@@ -61,6 +65,7 @@ function SignupPage() {
 
         <label>Password:</label>
         <input 
+         id="Imput2"
           type="password"
           name="password"
           value={user.password}
@@ -69,6 +74,7 @@ function SignupPage() {
 
         <label>Full Name:</label>
         <input 
+         id="Imput2"
           type="text"
           name="fullName"
           value={user.fullName}
@@ -77,20 +83,25 @@ function SignupPage() {
 
         <label>Username:</label>
         <input 
+         id="Imput2"
           type="text"
           name="username"
           value={user.username}
           onChange={handleTextChange}
         />
-
+        </div>
+<div id="ButtonBox2">
         <button type="submit">Sign Up</button>
+        </div>
       </form>
 
       { errorMessage && <p className="error-message">{errorMessage}</p> }
 
       <p>Already have account?</p>
       <Link to="/login"> Login</Link>
+
     </div>
+</div>
   )
 }
 

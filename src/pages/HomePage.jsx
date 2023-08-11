@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div>
       <h1>
-      <Link to="/sneakers">See all Sneakers</Link>
+      <Link to="/all-sneakers">See all Sneakers</Link>
       </h1>
  
 

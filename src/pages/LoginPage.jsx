@@ -41,33 +41,45 @@ function LoginPage() {
   };
   
   return (
+
+<div id="LPBox">
+
     <div className="LoginPage">
       <h1>Login</h1>
 
       <form onSubmit={handleLoginSubmit}>
-        <label>Email:</label>
+        <div id="EmailBox">
+        <label>Email:              </label>
         <input 
+        id="Imput"
           type="email"
+
           name="email"
           value={email}
           onChange={handleEmail}
         />
+       
 
         <label>Password:</label>
-        <input
+        <input  id="Imput"
           type="password"
           name="password"
           value={password}
           onChange={handlePassword}
         />
-
+        </div>
+<br /><br />
+<div id="ButtonBox">
         <button type="submit">Login</button>
+        </div>
       </form>
       { errorMessage && <p className="error-message">{errorMessage}</p> }
-
+<br />
       <p>Don't have an account yet?</p>
       <Link to="/signup"> Sign Up</Link>
+      <br />
     </div>
+    </div>  
   )
 }
 
